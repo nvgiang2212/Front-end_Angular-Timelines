@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import {NgModule} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-timelines';
+  title = 'angular-service-router';
+
+  constructor(private router: Router) {}
+  gotoTimelines() {
+    this.router.navigate(['/timelines']);
+  }
 }

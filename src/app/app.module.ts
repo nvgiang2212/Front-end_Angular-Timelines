@@ -7,6 +7,7 @@ import { TimelinesComponent } from './timelines/timelines.component';
 
 @NgModule({
   declarations: [
+    AppComponent,
     TimelinesComponent
   ],
   imports: [
